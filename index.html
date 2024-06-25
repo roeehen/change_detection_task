@@ -30,8 +30,8 @@
 
   //----- CUSTOMIZABLE VARIABLES -----------------------------------------
 
-    setSizes = [4,8] // set sizes (number of squares displayed in different visual array trials)
-    repSet = 30 // number of times each set size should be repeated
+    setSizes = [4, 6, 8, 10] // set sizes (number of squares displayed in different visual array trials)
+    repSet = 15 // number of times each set size should be repeated
     randomize = true // present different set sizes in random order. if false, set sizes will be presented in ascending order
     stimuli_duration = 300 // number of miliseconds to display each stimuli
     recall_duration = null // number of miliseconds to allow recall. If null, there is no time limit.
@@ -54,7 +54,7 @@
       }
     }
 
-  var stimuliDemoArray = [[4,true], [4,false], [8,false], [8,true]]
+  var stimuliDemoArray = [[4,true], [4,false], [6,false], [8,true]]
 
   if (randomize){
     var stimuliArray= stimuliDemoArray.concat(jsPsych.randomization.sampleWithoutReplacement(stimuliArr, stimuliArr.length))}
