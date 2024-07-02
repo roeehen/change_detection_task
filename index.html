@@ -31,7 +31,7 @@
   //----- CUSTOMIZABLE VARIABLES -----------------------------------------
 
     setSizes = [4, 6, 8, 10] // set sizes (number of squares displayed in different visual array trials)
-    repSet = 1 // number of times each set size should be repeated
+    repSet = 10 // number of times each set size should be repeated
     randomize = true // present different set sizes in random order. if false, set sizes will be presented in ascending order
     stimuli_duration = 300 // number of miliseconds to display each stimuli
     recall_duration = null // number of miliseconds to allow recall. If null, there is no time limit.
@@ -188,7 +188,7 @@ var demo_procedure = {
 
   var test_procedure = {
     timeline: [fixation, reward, fixation, recall/*, feedback*/],
-    repetitions: 8
+    repetitions: 80
   }
 
   var full_procedure = {
