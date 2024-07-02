@@ -92,11 +92,11 @@
     key_forward: "k"
   }
 
-  var conclusion = {
-    type: 'html-keyboard-response',
-    stimulus: '<div style="font-size:20px;">This task is over. Thank you for your participation in this task. <br><br>Please send the downloaded result file to the following email address: roeehen@mail.tau.ac.il</div>',
-    choices: jsPsych.NO_KEYS
-  }
+var conclusion = {
+  type: 'html-keyboard-response',
+  stimulus: '<div style="font-size:20px;">This task is over. Thank you for your participation in this task. <br><br>Please send the downloaded result file to:<br><b>roeehen@mail.tau.ac.il</b></div>',
+  choices: jsPsych.NO_KEYS
+}
 
 var fixation = {
   type: 'html-keyboard-response',
