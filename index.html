@@ -98,6 +98,7 @@ var conclusion = {
   choices: jsPsych.NO_KEYS
 }
 
+
 var fixation = {
   type: 'html-keyboard-response',
   stimulus: '<div style="font-size:40px;">+</div>',
@@ -187,7 +188,7 @@ var demo_procedure = {
 
   var test_procedure = {
     timeline: [fixation, reward, fixation, recall/*, feedback*/],
-    repetitions: 120
+    repetitions: 8
   }
 
   var full_procedure = {
