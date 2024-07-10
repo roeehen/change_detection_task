@@ -62,7 +62,7 @@
 
   var p_details = {
     type:"survey-text",
-    questions: [{prompt: "Enter ID number"}],
+    questions: [{prompt: "Enter phone number"}],
     on_finish:function(){
       partN = jsPsych.data.get().last(1).values()[0].partNum
       partN = partN.replace(/['"]+/g,'')
